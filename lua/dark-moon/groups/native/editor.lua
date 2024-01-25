@@ -1,6 +1,7 @@
-local M = {}
 local C = require("dark-moon.colors")
 local U = require("dark-moon.utils")
+
+local M = {}
 
 M.get = function ()
   return {

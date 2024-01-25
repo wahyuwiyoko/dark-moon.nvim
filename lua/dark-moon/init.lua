@@ -1,6 +1,7 @@
-local M = {}
-local highlight = require("dark-moon.utils").highlight
 local G = require("dark-moon.groups")
+local highlight = require("dark-moon.utils").highlight
+
+local M = {}
 
 M.settings = function ()
   vim.cmd.highlight("clear")
