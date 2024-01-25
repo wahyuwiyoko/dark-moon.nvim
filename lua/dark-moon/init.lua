@@ -16,10 +16,17 @@ M.set_hl_group = function (hl)
   end
 end
 
+M.set_var = function (group)
+  for var, color in pairs(group) do
+    vim.api.nvim_set_var(var, color)
+  end
+end
+
 M.load = function ()
   M.settings()
   M.set_hl_group(require("dark-moon.groups.editor").get())
   M.set_hl_group(require("dark-moon.groups.syntax").get())
+  M.set_var(require("dark-moon.groups.terminal").get())
   M.set_hl_group(require("dark-moon.groups.plugins.treesitter").get())
   M.set_hl_group(require("dark-moon.groups.plugins.cmp").get())
   M.set_hl_group(require("dark-moon.groups.plugins.gitsigns").get())

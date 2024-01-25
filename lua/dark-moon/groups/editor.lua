@@ -19,7 +19,7 @@ M.get = function ()
     DiffDelete = { fg = C.red },
     DiffText = { fg = C.blue },
     EndOfBuffer = { bg = C.bg_dark, fg = C.bg_dark },
-    TermCursor = {},
+    TermCursor = { bg = C.white, fg = C.bg_dark },
     TermCursorNC = {},
     ErrorMsg = { fg = C.red },
     VertSplit = { bg = C.bg_dark, fg = C.bg },
