@@ -1,0 +1,30 @@
+local main = {
+  bg = "#292d3e",
+  bg_dark = "#1b1e2b",
+  bg_light = "#32374d",
+  bg_lighter = "#444267",
+  fg = "#a6accd",
+  fg_dark = "#676e96",
+  fg_light = "#fbfbfb",
+  grey = "#8796b0",
+  grey_dark = "#353b52",
+  red = "#d06178",
+  heavy_red = "#e61f44",
+  green = "#b4c4b4",
+  green_high = "#bcd9c4",
+  heavy_green = "#acfab4",
+  blue = "#959dcb",
+  blue_light = "#b8bcf3",
+  yellow = "#cfcfbf",
+  yellow_light = "#dfdf9f",
+  orange = "#b4b4b4",
+  orange_light = "#c2b0b0",
+  purple = "#b9a3eb",
+  cyan = "#89ddff",
+  cyan_dark = "#89bbdd",
+  hollow = "#424760",
+  hollow_lighter = "#30354e",
+  white = "#ffffff"
+}
+
+return main
