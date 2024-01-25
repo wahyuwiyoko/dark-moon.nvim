@@ -128,7 +128,12 @@ M.get = function ()
     DiagnosticSignHint = {},
     DiagnosticSignOk = {},
     DiagnosticDeprecated = {},
-    DiagnosticUnnecessary = {}
+    DiagnosticUnnecessary = {},
+
+    healthError = {},
+    healthSuccess = {},
+    healthWarning = {},
+    healthHelp = {}
   }
 end
 
