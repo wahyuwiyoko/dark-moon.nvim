@@ -1,5 +1,6 @@
 local M = {}
 local highlight = require("dark-moon.utils").highlight
+local G = require("dark-moon.groups")
 
 M.settings = function ()
   vim.cmd.highlight("clear")
@@ -21,15 +22,10 @@ end
 
 M.load = function ()
   M.settings()
-  M.set_hl_group(require("dark-moon.groups.editor").get())
-  M.set_hl_group(require("dark-moon.groups.syntax").get())
-  M.set_hl_group(require("dark-moon.groups.plugins.treesitter").get())
-  M.set_hl_group(require("dark-moon.groups.plugins.cmp").get())
-  M.set_hl_group(require("dark-moon.groups.plugins.gitsigns").get())
 
-  for terminal, color in pairs(require("dark-moon.groups.terminal").get()) do
-    vim.g[terminal] = color
-  end
+  -- Apply color scheme
+  M.set_hl_group(G.get_groups())
+  G.set_term_colors()
 end
 
 return M
