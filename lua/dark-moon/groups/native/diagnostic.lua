@@ -26,11 +26,11 @@ M.get = function ()
     DiagnosticFloatingInfo = {},
     DiagnosticFloatingHint = {},
     DiagnosticFloatingOk = {},
-    DiagnosticSignError = {},
-    DiagnosticSignWarn = {},
-    DiagnosticSignInfo = {},
-    DiagnosticSignHint = {},
-    DiagnosticSignOk = {},
+    DiagnosticSignError = { fg = C.red.base },
+    DiagnosticSignWarn = { fg = C.orange.base },
+    DiagnosticSignInfo = { fg = C.yellow.base },
+    DiagnosticSignHint = { fg = C.green.base },
+    DiagnosticSignOk = { fg = C.green.high },
     DiagnosticDeprecated = {},
     DiagnosticUnnecessary = {}
   }
