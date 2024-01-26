@@ -36,7 +36,7 @@ end
 M.darken = function (hex, amount, bg)
   return M.blend(
     hex,
-    bg or require("dark-moon.colors").bg_dark,
+    bg or require("dark-moon.colors").bg.dark,
     math.abs(amount)
   )
 end

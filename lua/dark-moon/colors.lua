@@ -1,30 +1,48 @@
-local main = {
-  bg = "#292d3e",
-  bg_dark = "#1b1e2b",
-  bg_light = "#32374d",
-  bg_lighter = "#444267",
-  fg = "#a6accd",
-  fg_dark = "#676e96",
-  fg_light = "#fbfbfb",
-  grey = "#8796b0",
-  grey_dark = "#353b52",
-  red = "#d06178",
-  heavy_red = "#e61f44",
-  green = "#b4c4b4",
-  green_high = "#bcd9c4",
-  heavy_green = "#acfab4",
-  blue = "#959dcb",
-  blue_light = "#b8bcf3",
-  yellow = "#cfcfbf",
-  yellow_light = "#dfdf9f",
-  orange = "#b4b4b4",
-  orange_light = "#c2b0b0",
+return {
+  bg = {
+    base = "#292d3e",
+    dark = "#1b1e2b",
+    light = "#32374d",
+    lighter = "#444267"
+  },
+  fg = {
+    base = "#a6accd",
+    dark = "#676e96",
+    light = "#fbfbfb"
+  },
+  grey = {
+    base = "#8796b0",
+    dark = "#353b52"
+  },
+  red = {
+    base = "#d06178",
+    heavy = "#e61f44"
+  },
+  green = {
+    base = "#b4c4b4",
+    high = "#bcd9c4",
+    heavy = "#acfab4"
+  },
+  blue = {
+    base = "#959dcb",
+    light = "#b8bcf3"
+  },
+  yellow = {
+    base = "#cfcfbf",
+    light = "#dfdf9f"
+  },
+  orange = {
+    base = "#b4b4b4",
+    light = "#c2b0b0"
+  },
+  cyan = {
+    base = "#89ddff",
+    dark = "#89bbdd"
+  },
+  hollow = {
+    base = "#424760",
+    lighter = "#30354e"
+  },
   purple = "#b9a3eb",
-  cyan = "#89ddff",
-  cyan_dark = "#89bbdd",
-  hollow = "#424760",
-  hollow_lighter = "#30354e",
   white = "#ffffff"
 }
-
-return main
