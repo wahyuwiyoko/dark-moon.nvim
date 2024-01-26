@@ -4,7 +4,9 @@ local M = {}
 
 M.native = {
   "editor",
-  "syntax"
+  "syntax",
+  "lsp",
+  "diagnostic"
 }
 
 M.integrations = {
