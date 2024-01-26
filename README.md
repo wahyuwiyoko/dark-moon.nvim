@@ -81,6 +81,7 @@ require("dark-moon").setup({
 - [nvim-treesitter](https://github.com/nvim-treesitter/nvim-treesitter)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
+- [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 
 If you have a plugin that is not supported, feel free to create an issue or
 make a pull request!

@@ -12,7 +12,8 @@ M.native = {
 M.integrations = {
   "treesitter",
   "cmp",
-  "gitsigns"
+  "gitsigns",
+  "telescope"
 }
 
 M.get_groups = function ()
