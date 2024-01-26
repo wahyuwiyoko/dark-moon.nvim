@@ -1,4 +1,4 @@
-local merge_table = require("dark-moon.utils").merge_table
+local merge_table = require("dark-moon.utils.api").merge_table
 
 local M = {}
 

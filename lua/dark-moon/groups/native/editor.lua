@@ -1,5 +1,5 @@
 local C = require("dark-moon.colors")
-local U = require("dark-moon.utils")
+local U = require("dark-moon.utils.colors")
 
 local M = {}
 

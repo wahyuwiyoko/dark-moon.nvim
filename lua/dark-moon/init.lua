@@ -1,5 +1,5 @@
 local G = require("dark-moon.groups")
-local highlight = require("dark-moon.utils").highlight
+local set_hl_groups = require("dark-moon.utils.api").set_hl_groups
 
 local M = {}
 
@@ -15,17 +15,11 @@ M.settings = function ()
   vim.opt.termguicolors = true
 end
 
-M.set_hl_group = function (hl)
-  for group, styles in pairs(hl) do
-    highlight(group, styles)
-  end
-end
-
 M.load = function ()
   M.settings()
 
   -- Apply color scheme
-  M.set_hl_group(G.get_groups())
+  set_hl_groups(G.get_groups())
   G.set_term_colors()
 end
 
