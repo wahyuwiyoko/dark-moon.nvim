@@ -1,3 +1,4 @@
+local highlight_options = require("dark-moon.config").options.highlight_groups
 local merge_table = require("dark-moon.utils.api").merge_table
 
 local M = {}
@@ -27,7 +28,7 @@ M.get_groups = function ()
     groups = merge_table(groups, require("dark-moon.groups.integrations." .. integration).get())
   end
 
-  return groups
+  return merge_table(groups, highlight_options)
 end
 
 M.set_term_colors = function ()

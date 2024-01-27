@@ -1,4 +1,4 @@
-local C = require("dark-moon.colors")
+-- local C = require("dark-moon.colors")
 
 local M = {}
 
@@ -15,19 +15,19 @@ M.get = function ()
     -- See :help lsp-semantic-highlight
     ["@lsp.type.class"] = {},
     ["@lsp.type.decorator"] = {},
-    ["@lsp.type.enum"] = {},
+    ["@lsp.type.enum"] = { link = "@type" },
     ["@lsp.type.enumMember"] = {},
-    ["@lsp.type.function"] = {},
-    ["@lsp.type.interface"] = {},
-    ["@lsp.type.macro"] = {},
-    ["@lsp.type.method"] = {},
+    ["@lsp.type.function"] = { link = "@function" },
+    ["@lsp.type.interface"] = { link = "@type" },
+    ["@lsp.type.macro"] = { link = "Macro" },
+    ["@lsp.type.method"] = { link = "@function.method" },
     ["@lsp.type.namespace"] = {},
     ["@lsp.type.parameter"] = {},
     ["@lsp.type.property"] = {},
     ["@lsp.type.struct"] = {},
-    ["@lsp.type.type"] = {},
+    ["@lsp.type.type"] = { link = "@type" },
     ["@lsp.type.typeParameter"] = {},
-    ["@lsp.type.variable"] = {}
+    ["@lsp.type.variable"] = { link = "@variable" }
   }
 end
 

@@ -1,16 +1,14 @@
 # Dark Moon
 
-> [!IMPORTANT]
-> This project is under development and not yet ready to use.
-> Some of the color highlights may be missing.
-
-A Neovim color scheme based on
+A Neovim color scheme derived from
 [blue-moon](https://github.com/kyazdani42/blue-moon).
 
 Dark Moon color scheme support for Treesitter, built-in LSP client, true-color
 terminals, and [other supported plugins](#supported-plugins).
 
-<!-- ## Showcase -->
+## Showcase
+
+Coming soon!
 
 ## Requirements
 
@@ -55,7 +53,7 @@ To get the palette in Lua:
 local palette = require("dark-moon.colors")
 ```
 
-<!-- ## Configuration
+## Configuration
 
 Setup options is optional, the Dark Moon will use the default values for setup
 options, unless `setup` is called. You need to configure the options before
@@ -63,18 +61,46 @@ set the color scheme. Below is the default configuration:
 
 ```lua
 require("dark-moon").setup({
+  styles = {
+    bold = true,
+    italic = false
+  },
+  enable_terminal_colors = true,
 
+  -- Override any style of highlight groups
+  highlight_groups = {}
 })
+
+vim.cmd.colorscheme("dark-moon")
 ```
 
+For the list of colors/palette, you can see in
+[colors.lua](lua/dark-moon/colors.lua) file.
+
 An example of overriding the colors:
+
 ```lua
 local palette = require("dark-moon.colors")
 
 require("dark-moon").setup({
-
+  highlight_groups = {
+    String = { fg = palette.green.high },
+    PmenuSel = { fg = palette.bg.dark, bg = palette.cyan.dark },
+    TelescopeTitle = {
+      fg = "#ffffff",
+      bg = "#000000",
+      sp = palette.red.base,
+      bold = false,
+      italic = true,
+      underline = true,
+      undercurl = false
+    },
+    ["@variable.member"] = { fg = palette.fg.light }
+  }
 })
-``` -->
+
+vim.cmd.colorscheme("dark-moon")
+```
 
 ## Supported Plugins
 
@@ -97,7 +123,7 @@ a PR with a fix, reference the issue you created.
 ## Acknowledgements
 
 - [kyazdani42](https://github.com/kyazdani42) for [blue-moon](https://github.com/kyazdani42/blue-moon)
-- [rktjmp](https://github.com/rktjmp) for [lush.nvim](https://github.com/rktjmp/lush.nvim)
+- [rktjmp](https://github.com/rktjmp) for [lush-template](https://github.com/rktjmp/lush-template)
 - [Catppuccin](https://github.com/catppuccin) for [catppuccin/nvim](https://github.com/catppuccin/nvim)
 - [Rosé Pine](https://github.com/rose-pine) for [rose-pine/neovim](https://github.com/rose-pine/neovim)
 - [AlexvZyl](https://github.com/AlexvZyl) for [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim)
