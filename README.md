@@ -47,10 +47,10 @@ vim.cmd.colorscheme("dark-moon")
 require("dark-moon").load()
 ```
 
-To get the palette in Lua:
+To get the colors/palette in Lua:
 
 ```lua
-local palette = require("dark-moon.colors")
+local color = require("dark-moon.colors")
 ```
 
 ## Configuration
@@ -74,28 +74,28 @@ require("dark-moon").setup({
 vim.cmd.colorscheme("dark-moon")
 ```
 
-For the list of colors/palette, you can see in
+For the list of color/palette, you can see in
 [colors.lua](lua/dark-moon/colors.lua) file.
 
 An example of overriding the colors:
 
 ```lua
-local palette = require("dark-moon.colors")
+local color = require("dark-moon.colors")
 
 require("dark-moon").setup({
   highlight_groups = {
-    String = { fg = palette.green.high },
-    PmenuSel = { fg = palette.bg.dark, bg = palette.cyan.dark },
+    String = { fg = color.green.high },
+    PmenuSel = { fg = color.bg.dark, bg = color.cyan.dark },
     TelescopeTitle = {
       fg = "#ffffff",
       bg = "#000000",
-      sp = palette.red.base,
+      sp = color.red.base,
       bold = false,
       italic = true,
       underline = true,
       undercurl = false
     },
-    ["@variable.member"] = { fg = palette.fg.light }
+    ["@variable.member"] = { fg = color.fg.light }
   }
 })
 
