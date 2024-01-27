@@ -25,7 +25,7 @@ M.load = function (options)
   config.setup(options)
   set_hl_groups(groups.get_groups())
 
-  if config.options.enable_terminal_colors then
+  if config.options.terminal_colors then
     groups.set_term_colors()
   end
 end

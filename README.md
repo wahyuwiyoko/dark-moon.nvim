@@ -6,7 +6,7 @@ A Neovim color scheme derived from
 Dark Moon color scheme support for Treesitter, built-in LSP client, true-color
 terminals, and [other supported plugins](#supported-plugins).
 
-## Showcase
+## Screenshots
 
 Coming soon!
 
@@ -20,13 +20,43 @@ Coming soon!
 With [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
+-- Install without configuration
 { "wahyuwiyoko/dark-moon.nvim" }
+
+-- Or with configuration
+{
+  "wahyuwiyoko/dark-moon.nvim",
+  lazy = false, -- Load at startup if it's your main color scheme
+  priority = 1000, -- Load this first before all other plugins
+  config = function ()
+    require("dark-moon").setup({
+      -- ...
+    })
+
+    -- Setup must be called before load the color scheme
+    vim.cmd.colorscheme("dark-moon")
+  end
+}
 ```
 
 With [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
-use { "wahyuwiyoko/dark-moon.nvim" }
+-- Install without configuration
+use({ "wahyuwiyoko/dark-moon.nvim" })
+
+-- Or with configuration
+use({
+  "wahyuwiyoko/dark-moon.nvim",
+  config = function ()
+    require("dark-moon").setup({
+      -- ...
+    })
+
+    -- Setup must be called before load the color scheme
+    vim.cmd.colorscheme("dark-moon")
+  end
+})
 ```
 
 ## Usage
@@ -47,35 +77,25 @@ vim.cmd.colorscheme("dark-moon")
 require("dark-moon").load()
 ```
 
-To get the colors/palette in Lua:
-
-```lua
-local color = require("dark-moon.colors")
-```
-
 ## Configuration
 
 Setup options is optional, the Dark Moon will use the default values for setup
-options, unless `setup` is called. You need to configure the options before
+options, unless `setup()` is called. You need to configure the options before
 set the color scheme. Below is the default configuration:
 
 ```lua
 require("dark-moon").setup({
+  terminal_colors = true, -- Set terminal colors used in `:terminal`
   styles = {
     bold = true,
     italic = false
   },
-  enable_terminal_colors = true,
-
-  -- Override any style of highlight groups
-  highlight_groups = {}
+  overrides = {} -- Override any style of highlight groups
 })
 
+-- Setup must be called before load the color scheme
 vim.cmd.colorscheme("dark-moon")
 ```
-
-For the list of color/palette, you can see in
-[colors.lua](lua/dark-moon/colors.lua) file.
 
 An example of overriding the colors:
 
@@ -83,9 +103,7 @@ An example of overriding the colors:
 local color = require("dark-moon.colors")
 
 require("dark-moon").setup({
-  highlight_groups = {
-    String = { fg = color.green.high },
-    PmenuSel = { fg = color.bg.dark, bg = color.cyan.dark },
+  overrides = {
     TelescopeTitle = {
       fg = "#ffffff",
       bg = "#000000",
@@ -95,11 +113,43 @@ require("dark-moon").setup({
       underline = true,
       undercurl = false
     },
+    String = { fg = color.green.high },
+    PmenuSel = { fg = color.bg.dark, bg = color.cyan.dark },
     ["@variable.member"] = { fg = color.fg.light }
   }
 })
 
+-- Setup must be called before load the color scheme
 vim.cmd.colorscheme("dark-moon")
+```
+
+## Palette
+
+For the list of color/palette, you can see in
+[colors.lua](lua/dark-moon/colors.lua) file.
+
+To get the colors/palette in Lua:
+
+```lua
+local color = require("dark-moon.colors")
+```
+
+You can also inspect every color in Lua:
+
+```lua
+local color = require("dark-moon.colors")
+
+print(vim.inspect(color.blue))
+-- {
+--   base = "#959dcb",
+--   light = "#b8bcf3"
+-- }
+```
+
+Or just check all available colors with command:
+
+```vim
+:lua print(vim.inspect(require("dark-moon.colors")))
 ```
 
 ## Supported Plugins

@@ -1,14 +1,12 @@
 local M = {}
 
 local defaults = {
+  terminal_colors = true, -- Set terminal colors used in `:terminal`
   styles = {
     bold = true,
     italic = false
   },
-  enable_terminal_colors = true,
-
-  -- Override any style of highlight groups
-  highlight_groups = {}
+  overrides = {} -- Override any style of highlight groups
 }
 
 M.options = defaults

@@ -28,7 +28,7 @@ M.get_groups = function ()
     groups = merge_table(groups, require("dark-moon.groups.integrations." .. integration).get())
   end
 
-  return merge_table(groups, options.highlight_groups)
+  return merge_table(groups, options.overrides)
 end
 
 M.set_term_colors = function ()
