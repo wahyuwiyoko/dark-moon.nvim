@@ -1,19 +1,35 @@
-local G = require("dark-moon.groups")
-local C = require("dark-moon.config")
-local U = require("dark-moon.utils.api")
+local groups = require("dark-moon.groups")
+local config = require("dark-moon.config")
+local set_hl_groups = require("dark-moon.utils.api").set_hl_groups
 
 local M = {}
 
-M.load = function (options)
-  U.init()
-  C.setup(options)
-  U.set_hl_groups(G.get_groups())
+local function init()
+  local color = "dark-moon"
 
-  if C.options.enable_terminal_colors then
-    G.set_term_colors()
+  if vim.g.colors_name ~= color then
+    vim.cmd.highlight("clear")
+    vim.opt.background = "dark"
+
+    if vim.fn.exists("syntax_on") then
+      vim.cmd.syntax("reset")
+    end
+
+    vim.g.colors_name = color
+    vim.opt.termguicolors = true
   end
 end
 
-M.setup = C.setup
+M.load = function (options)
+  init()
+  config.setup(options)
+  set_hl_groups(groups.get_groups())
+
+  if config.options.enable_terminal_colors then
+    groups.set_term_colors()
+  end
+end
+
+M.setup = config.setup
 
 return M

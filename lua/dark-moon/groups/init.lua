@@ -1,16 +1,16 @@
-local highlight_options = require("dark-moon.config").options.highlight_groups
+local options = require("dark-moon.config").options
 local merge_table = require("dark-moon.utils.api").merge_table
 
 local M = {}
 
-M.native = {
+local built_in = {
   "editor",
   "syntax",
   "lsp",
   "diagnostic"
 }
 
-M.integrations = {
+local integrations = {
   "treesitter",
   "cmp",
   "gitsigns",
@@ -20,19 +20,20 @@ M.integrations = {
 M.get_groups = function ()
   local groups = {}
 
-  for _, native in ipairs(M.native) do
+  for _, native in ipairs(built_in) do
     groups = merge_table(groups, require("dark-moon.groups.native." .. native).get())
   end
 
-  for _, integration in ipairs(M.integrations) do
+  for _, integration in ipairs(integrations) do
     groups = merge_table(groups, require("dark-moon.groups.integrations." .. integration).get())
   end
 
-  return merge_table(groups, highlight_options)
+  return merge_table(groups, options.highlight_groups)
 end
 
 M.set_term_colors = function ()
   local colors = require("dark-moon.groups.native.terminal").get()
+
   for term, color in pairs(colors) do
     vim.g[term] = color
   end

@@ -20,7 +20,7 @@ M.get = function ()
     DiffText = { fg = C.blue.base },
     diffAdded = { link = "DiffAdd" },
     diffChanged = { link = "DiffChange" },
-		diffRemoved = { link = "DiffDelete" },
+    diffRemoved = { link = "DiffDelete" },
     EndOfBuffer = { fg = C.bg.dark, bg = C.bg.dark },
     TermCursor = { fg = C.bg.dark, bg = C.white },
     ErrorMsg = { fg = C.red.base, bold = O.styles.bold },

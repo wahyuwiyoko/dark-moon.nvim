@@ -1,6 +1,6 @@
 local M = {}
 
-M.hex_to_rgb = function (hex_str)
+local function hex_to_rgb(hex_str)
   local hex = "[abcdef0-9][abcdef0-9]"
   local pat = "^#(" .. hex .. ")(" .. hex .. ")(" .. hex .. ")$"
   hex_str = string.lower(hex_str)
@@ -15,9 +15,9 @@ M.hex_to_rgb = function (hex_str)
   return { tonumber(r, 16), tonumber(g, 16), tonumber(b, 16) }
 end
 
-M.blend = function (fg, bg, alpha)
-  bg = M.hex_to_rgb(bg)
-  fg = M.hex_to_rgb(fg)
+local function blend(fg, bg, alpha)
+  bg = hex_to_rgb(bg)
+  fg = hex_to_rgb(fg)
 
   local blend_channel = function (i)
     local ret = (alpha * fg[i] + ((1 - alpha) * bg[i]))
@@ -34,7 +34,7 @@ M.blend = function (fg, bg, alpha)
 end
 
 M.darken = function (hex, amount, bg)
-  return M.blend(
+  return blend(
     hex,
     bg or require("dark-moon.colors").bg.dark,
     math.abs(amount)
