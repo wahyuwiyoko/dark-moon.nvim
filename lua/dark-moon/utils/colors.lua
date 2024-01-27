@@ -1,26 +1,27 @@
 local M = {}
 
-local function hex_to_rgb(hex_str)
+local function hex_to_rgb(str)
+  str = string.lower(str)
+
   local hex = "[abcdef0-9][abcdef0-9]"
-  local pat = "^#(" .. hex .. ")(" .. hex .. ")(" .. hex .. ")$"
-  hex_str = string.lower(hex_str)
+  local pattern = "^#(" .. hex .. ")(" .. hex .. ")(" .. hex .. ")$"
 
   assert(
-    string.find(hex_str, pat) ~= nil,
-    "hex_to_rgb: invalid hex_str: " .. tostring(hex_str)
+    string.find(str, pattern) ~= nil,
+    "hex_to_rgb: invalid hex_str: " .. tostring(str)
   )
 
-  local r, g, b = string.match(hex_str, pat)
+  local r, g, b = string.match(str, pattern)
 
   return { tonumber(r, 16), tonumber(g, 16), tonumber(b, 16) }
 end
 
-local function blend(fg, bg, alpha)
-  bg = hex_to_rgb(bg)
-  fg = hex_to_rgb(fg)
+local function blend(foreground, background, alpha)
+  background = hex_to_rgb(background)
+  foreground = hex_to_rgb(foreground)
 
   local blend_channel = function (i)
-    local ret = (alpha * fg[i] + ((1 - alpha) * bg[i]))
+    local ret = (alpha * foreground[i] + ((1 - alpha) * background[i]))
 
     return math.floor(math.min(math.max(0, ret), 255) + 0.5)
   end
