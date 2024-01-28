@@ -1,5 +1,15 @@
 # Dark Moon
 
+> [!IMPORTANT]
+> The color palette from blue-moon will be change soon as I still updating the
+> project and find a darker color, which likely Dark Moon color will be the
+> same as blue-moon but a bit darker.
+
+> [!IMPORTANT]
+> I encourage people who use this color scheme and want to updating it to
+> latest changes, please check the README again for the instruction as it may
+> have a minor breaking changes because this is an early development.
+
 A Neovim color scheme derived from
 [blue-moon](https://github.com/kyazdani42/blue-moon).
 
