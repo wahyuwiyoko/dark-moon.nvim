@@ -13,12 +13,14 @@ M.get = function ()
     LspSignatureActiveParameter = {},
 
     -- See :help lsp-semantic-highlight
+    ["@lsp.type.comment"] = {},
     ["@lsp.type.class"] = {},
     ["@lsp.type.decorator"] = {},
     ["@lsp.type.enum"] = { link = "@type" },
     ["@lsp.type.enumMember"] = {},
     ["@lsp.type.function"] = { link = "@function" },
     ["@lsp.type.interface"] = { link = "@type" },
+    ["@lsp.type.keyword"] = { link = "@keyword" },
     ["@lsp.type.macro"] = { link = "Macro" },
     ["@lsp.type.method"] = { link = "@function.method" },
     ["@lsp.type.namespace"] = {},

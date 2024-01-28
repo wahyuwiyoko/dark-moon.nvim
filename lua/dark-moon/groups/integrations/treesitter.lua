@@ -85,14 +85,14 @@ M.get = function ()
 
     -- Comments
     ["@comment"] = { link = "Comment" },
-    ["@comment.documentation"] = { fg = C.fg.dark },
+    ["@comment.documentation"] = { link = "@comment" },
 
-    ["@comment.error"] = { fg = C.red.base },
-    ["@comment.warning"] = { fg = C.orange.base },
-    ["@comment.todo"] = { fg = C.cyan.base, bg = C.cyan.base, blend = 20 },
-    ["@comment.hint"] = { fg = C.purple, bg = C.purple, blend = 20 },
-    ["@comment.info"] = { fg = C.yellow.base, bg = C.yellow.base, blend = 20 },
-    ["@comment.note"] = { fg = C.blue.base, bg = C.blue.base, blend = 20 },
+    ["@comment.error"] = { fg = C.bg.dark, bg = C.red.base },
+    ["@comment.warning"] = { fg = C.bg.dark, bg = C.orange.base },
+    ["@comment.todo"] = { fg = C.bg.dark, bg = C.cyan.base },
+    ["@comment.hint"] = { fg = C.bg.dark, bg = C.green.base },
+    ["@comment.info"] = { fg = C.bg.dark, bg = C.purple },
+    ["@comment.note"] = { fg = C.bg.dark, bg = C.blue.base },
 
     -- Markup
     ["@markup.strong"] = { bold = O.styles.bold },
@@ -117,9 +117,9 @@ M.get = function ()
     ["@markup.list.checked"] = { fg = C.cyan.base, bg = C.cyan.base, blend = 10 },
     ["@markup.list.unchecked"] = { fg = C.fg.light },
 
-    ["@diff.plus"] = { fg = C.green.heavy, bg = C.green.heavy, blend = 20 },
-    ["@diff.minus"] = { fg = C.red.heavy, bg = C.red.heavy, blend = 20 },
-    ["@diff.delta"] = { bg = C.yellow.base, blend = 20 },
+    ["@diff.plus"] = { link = "DiffAdd" },
+    ["@diff.minus"] = { link = "DiffDelete" },
+    ["@diff.delta"] = { link = "DiffChange" },
 
     ["@tag"] = { link = "Tag" },
     ["@tag.attribute"] = { fg = C.purple },
