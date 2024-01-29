@@ -37,6 +37,5 @@ return {
     base = "#1fbfff",
     dark = "#81b6da"
   },
-  purple = "#a286e4",
-  white = "#ffffff"
+  purple = "#a286e4"
 }
