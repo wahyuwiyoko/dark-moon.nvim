@@ -2,13 +2,13 @@
 
 > [!IMPORTANT]
 > The color palette from blue-moon will be change soon as I still updating the
-> project and find a darker color, which likely Dark Moon color will be the
-> same as blue-moon but a bit darker.
+> project and find a darker color. The color will be the same as blue-moon but
+> darker. Any feedback are welcome for the new color palette.
 
 > [!IMPORTANT]
 > I encourage people who use this color scheme and want to updating it to
-> latest changes, please check the README again for the instruction as it may
-> have a minor breaking changes because this is an early development.
+> latest changes, please check the README again soon for the instruction as it
+> may have a minor breaking changes because it's an early development.
 
 A Neovim color scheme derived from
 [blue-moon](https://github.com/kyazdani42/blue-moon).
@@ -40,7 +40,7 @@ With [lazy.nvim](https://github.com/folke/lazy.nvim):
   priority = 1000, -- Load this first before all other plugins
   config = function ()
     require("dark-moon").setup({
-      -- ...
+      -- Your configuration will be here
     })
 
     -- Setup must be called before load the color scheme
@@ -60,7 +60,7 @@ use({
   "wahyuwiyoko/dark-moon.nvim",
   config = function ()
     require("dark-moon").setup({
-      -- ...
+      -- Your configuration will be here
     })
 
     -- Setup must be called before load the color scheme
@@ -123,7 +123,6 @@ require("dark-moon").setup({
       underline = true,
       undercurl = false
     },
-    String = { fg = color.green.dim },
     ["@variable.member"] = { fg = color.fg.bright }
   }
 })
@@ -182,8 +181,6 @@ a PR with a fix, reference the issue you created.
 ## Acknowledgements
 
 - [kyazdani42](https://github.com/kyazdani42) for [blue-moon](https://github.com/kyazdani42/blue-moon)
-- [rktjmp](https://github.com/rktjmp) for [lush-template](https://github.com/rktjmp/lush-template)
-- [Catppuccin](https://github.com/catppuccin) for [catppuccin/nvim](https://github.com/catppuccin/nvim)
-- [Rosé Pine](https://github.com/rose-pine) for [rose-pine/neovim](https://github.com/rose-pine/neovim)
 - [AlexvZyl](https://github.com/AlexvZyl) for [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim)
+- [rktjmp](https://github.com/rktjmp) for [lush-template](https://github.com/rktjmp/lush-template)
 - [Coolors](https://coolors.co/) for [color picker](https://coolors.co/color-picker)
