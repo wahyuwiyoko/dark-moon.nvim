@@ -76,7 +76,7 @@ M.get = function ()
     ErrorMsg = { fg = C.red.base, bold = O.styles.bold },
     NvimInternalError = { link = "ErrorMsg" },
 
-    Title = { fg = C.green.base },
+    Title = { fg = C.cyan.base, bold = O.styles.bold },
     SignColumn = { fg = C.yellow.base },
     Question = { fg = C.yellow.base },
     SpecialKey = { bg = C.bg.bright },

@@ -101,7 +101,7 @@ M.get = function ()
     ["@markup.strikethrough"] = { strikethrough = true },
     ["@markup.underline"] = { underline = true },
 
-    ["@markup.heading"] = { fg = C.cyan.base, bold = O.styles.bold },
+    ["@markup.heading"] = { link = "Title" },
     ["@markup.quote"] = { fg = C.fg.dark },
     ["@markup.math"] = { link = "Special" },
     ["@markup.environment"] = { link = "Macro" },
