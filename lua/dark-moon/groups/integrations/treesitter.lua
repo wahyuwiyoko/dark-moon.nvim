@@ -27,15 +27,16 @@ M.get = function ()
     -- ["@string.documentation"] = {},
     ["@string.regexp"] = { fg = C.cyan.dark },
     ["@string.escape"] = { fg = C.cyan.dark },
-    ["string.special"] = { link = "String" },
-    ["string.special.symbol"] = { link = "Identifier" },
-    ["string.special.url"] = { fg = C.green.base },
-    -- ["string.special.path"] = {},
+    ["@string.special"] = { link = "String" },
+    ["@string.special.symbol"] = { link = "Identifier" },
+    ["@string.special.url"] = { fg = C.green.base },
+    -- ["@string.special.path"] = {},
 
     ["@character"] = { link = "Character" },
     ["@character.special"] = { link = "Character" },
 
     ["@boolean"] = { link = "Boolean" },
+
     ["@number"] = { link = "Number" },
     ["@number.float"] = { link = "Float" },
 
@@ -87,12 +88,12 @@ M.get = function ()
     ["@comment"] = { link = "Comment" },
     ["@comment.documentation"] = { link = "@comment" },
 
-    ["@comment.error"] = { fg = C.bg.dark, bg = C.red.base },
-    ["@comment.warning"] = { fg = C.bg.dark, bg = C.orange.base },
     ["@comment.todo"] = { fg = C.bg.dark, bg = C.cyan.base },
     ["@comment.hint"] = { fg = C.bg.dark, bg = C.green.base },
     ["@comment.info"] = { fg = C.bg.dark, bg = C.purple },
     ["@comment.note"] = { fg = C.bg.dark, bg = C.blue.base },
+    ["@comment.warning"] = { fg = C.bg.dark, bg = C.orange.base },
+    ["@comment.error"] = { fg = C.bg.dark, bg = C.red.base },
 
     -- Markup
     ["@markup.strong"] = { bold = O.styles.bold },
@@ -101,7 +102,6 @@ M.get = function ()
     ["@markup.underline"] = { underline = true },
 
     ["@markup.heading"] = { fg = C.cyan.base, bold = O.styles.bold },
-
     ["@markup.quote"] = { fg = C.fg.dark },
     ["@markup.math"] = { link = "Special" },
     ["@markup.environment"] = { link = "Macro" },

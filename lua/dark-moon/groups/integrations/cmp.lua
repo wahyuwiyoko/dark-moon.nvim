@@ -10,14 +10,16 @@ M.get = function ()
     CmpItemAbbrMatch = { fg = C.fg.bright, bold = O.styles.bold },
     CmpItemAbbrMatchFuzzy = { fg = C.cyan.base, bold = O.styles.bold },
     CmpItemAbbrDeprecated = { fg = C.fg.base, strikethrough = true },
+
     CmpItemKind = { fg = C.cyan.dark },
-    -- CmpItemMenu = { fg = C.red.base },
     CmpItemKindClassDefault = { link = "StorageClass" },
     CmpItemKindFunctionDefault = { link = "Function" },
     CmpItemKindInterfaceDefault = { link = "Type" },
     CmpItemKindMethodDefault = { link = "PreProc" },
     CmpItemKindSnippetDefault = { link = "String" },
     CmpItemKindVariableDefault = { link = "Identifier" }
+
+    -- CmpItemMenu = {}
   }
 end
 

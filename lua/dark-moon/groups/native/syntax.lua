@@ -6,7 +6,6 @@ local M = {}
 M.get = function ()
   return {
     -- See :help group-name
-    Comment = { fg = C.fg.dark, italic = O.styles.italic },
     Constant = { fg = C.cyan.base },
     String = { fg = C.green.base },
     Character = { fg = C.green.base },
@@ -40,13 +39,15 @@ M.get = function ()
     SpecialChar = { link = "Special" },
     Tag = { fg = C.blue.bright },
     -- Delimiter = {},
-    SpecialComment = { fg = C.fg.dark },
     -- Debug = {},
 
+    Comment = { fg = C.fg.dark, italic = O.styles.italic },
+    SpecialComment = { fg = C.fg.dark },
+
     Underlined = { underline = true },
-    Ignore = {},
+    Todo = { fg = C.blue.base },
     Error = { fg = C.red.base },
-    Todo = { fg = C.purple }
+    -- Ignore = {}
   }
 end
 
