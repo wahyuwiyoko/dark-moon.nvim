@@ -5,7 +5,7 @@ local M = {}
 M.get = function ()
   return {
     -- See :help gitsigns-highlight-groups
-    GitSignsAdd = { fg = C.green.dim },
+    GitSignsAdd = { fg = C.green.dark },
     GitSignsChange = { fg = C.orange.bright },
     GitSignsDelete = { fg = C.red.base },
     GitSignsTopDelete = { fg = C.red.base },

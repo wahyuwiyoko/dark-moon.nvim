@@ -69,7 +69,7 @@ M.get = function ()
     TabLineFill = { fg = C.fg.bright, bg = C.bg.dark },
     TabLineSel = { fg = C.fg.bright, bg = C.bg.base, bold = O.styles.bold },
     Title = { fg = C.green.base },
-    Visual = { bg = C.grey.dim },
+    Visual = { bg = C.grey.dark },
     VisualNOS = { bg = C.red.base },
     WarningMsg = { fg = C.red.base },
     Whitespace = { link = "NonText" },
@@ -78,7 +78,7 @@ M.get = function ()
     WinBar = { bold = O.styles.bold },
     WinBarNC = { link = "WinBar" },
     healthError = { fg = C.red.base },
-    healthSuccess = { fg = C.cyan.dim },
+    healthSuccess = { fg = C.cyan.dark },
     healthWarning = { fg = C.yellow.base },
     healthHelp = { fg = C.cyan.base }
   }

@@ -11,15 +11,15 @@ return {
   },
   grey = {
     base = "#9da9be",
-    dim = "#333c4d"
+    dark = "#333c4d"
   },
   red = {
     base = "#e65e5e",
-    dim = "#ed8f8f"
+    dark = "#ed8f8f"
   },
   green = {
     base = "#89a389",
-    dim = "#a7baa7"
+    dark = "#a7baa7"
   },
   blue = {
     base = "#7d87bf",
@@ -35,7 +35,7 @@ return {
   },
   cyan = {
     base = "#1fbfff",
-    dim = "#81b6da"
+    dark = "#81b6da"
   },
   purple = "#a286e4",
   white = "#ffffff"

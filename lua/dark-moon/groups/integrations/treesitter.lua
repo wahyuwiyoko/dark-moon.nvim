@@ -25,8 +25,8 @@ M.get = function ()
     -- Literals
     ["@string"] = { link = "String" },
     -- ["@string.documentation"] = {},
-    ["@string.regexp"] = { fg = C.cyan.dim },
-    ["@string.escape"] = { fg = C.cyan.dim },
+    ["@string.regexp"] = { fg = C.cyan.dark },
+    ["@string.escape"] = { fg = C.cyan.dark },
     ["string.special"] = { link = "String" },
     ["string.special.symbol"] = { link = "Identifier" },
     ["string.special.url"] = { fg = C.green.base },
@@ -41,7 +41,7 @@ M.get = function ()
 
     -- Types
     ["@type"] = { link = "Type" },
-    ["@type.builtin"] = { fg = C.red.dim, bold = O.styles.bold },
+    ["@type.builtin"] = { fg = C.red.dark, bold = O.styles.bold },
     ["@type.definition"] = { fg = C.blue.base },
     ["@type.qualifier"] = { fg = C.orange.base },
 
@@ -64,12 +64,12 @@ M.get = function ()
     ["@keyword"] = { link = "Keyword" },
     -- ["@keyword.coroutine"] = {},
     ["@keyword.function"] = { fg = C.blue.bright },
-    ["@keyword.operator"] = { fg = C.red.dim },
-    ["@keyword.import"] = { fg = C.cyan.dim },
+    ["@keyword.operator"] = { fg = C.red.dark },
+    ["@keyword.import"] = { fg = C.cyan.dark },
     -- ["@keyword.storage"] = {},
     ["@keyword.repeat"] = { fg = C.blue.base },
     ["@keyword.return"] = { fg = C.blue.base },
-    ["@keyword.debug"] = { fg = C.cyan.dim },
+    ["@keyword.debug"] = { fg = C.cyan.dark },
     ["@keyword.exception"] = { fg = C.blue.base },
 
     ["@keyword.conditional"] = { fg = C.blue.base },
