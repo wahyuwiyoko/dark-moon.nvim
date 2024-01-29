@@ -21,18 +21,18 @@ M.get_groups = function ()
   local groups = {}
 
   for _, native in ipairs(built_in) do
-    groups = merge_table(groups, require("dark-moon.groups.native." .. native).get())
+    groups = merge_table(groups, require("dark-moon.groups.native." .. native))
   end
 
   for _, integration in ipairs(integrations) do
-    groups = merge_table(groups, require("dark-moon.groups.integrations." .. integration).get())
+    groups = merge_table(groups, require("dark-moon.groups.integrations." .. integration))
   end
 
   return merge_table(groups, config.options.overrides)
 end
 
 M.set_term_colors = function ()
-  local colors = require("dark-moon.groups.native.terminal").get()
+  local colors = require("dark-moon.groups.native.terminal")
 
   for term, color in pairs(colors) do
     vim.g[term] = color
