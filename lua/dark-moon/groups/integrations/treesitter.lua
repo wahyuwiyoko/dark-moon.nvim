@@ -11,7 +11,7 @@ return {
   ["@variable.member"] = { fg = C.fg.bright },
 
   ["@constant"] = { fg = C.yellow.base },
-  ["@constant.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
+  ["@constant.builtin"] = { fg = C.orange.bright, bold = O.styles.bold },
   ["@constant.macro"] = { fg = C.yellow.base },
 
   ["@module"] = { fg = C.fg.bright },
@@ -38,30 +38,30 @@ return {
 
   -- Types
   ["@type"] = { link = "Type" },
-  ["@type.builtin"] = { fg = C.red.dark, bold = O.styles.bold },
+  ["@type.builtin"] = { fg = C.yellow.base, bold = O.styles.bold },
   ["@type.definition"] = { fg = C.blue.base },
-  ["@type.qualifier"] = { fg = C.orange.base },
+  ["@type.qualifier"] = { fg = C.orange.bright },
 
   -- ["@attribute"] = {},
   ["@property"] = { fg = C.blue.bright, italic = O.styles.italic },
 
   -- Functions
   ["@function"] = { link = "Function" },
-  ["@function.builtin"] = { fg = C.purple, bold = O.styles.bold },
+  ["@function.builtin"] = { link = "Function" },
   ["@function.call"] = { link = "Function" },
-  ["@function.macro"] = { fg = C.orange.base },
+  ["@function.macro"] = { link = "Function" },
 
   ["@function.method"] = { link = "Function" },
   ["@function.method.call"] = { link = "Function" },
 
-  ["@constructor"] = { fg = C.yellow.base },
+  ["@constructor"] = { link = "Function" },
   ["@operator"] = { link = "Operator" },
 
   -- Keywords
   ["@keyword"] = { link = "Keyword" },
   -- ["@keyword.coroutine"] = {},
-  ["@keyword.function"] = { fg = C.blue.bright },
-  ["@keyword.operator"] = { fg = C.red.dark },
+  ["@keyword.function"] = { fg = C.blue.base },
+  ["@keyword.operator"] = { fg = C.cyan.base },
   ["@keyword.import"] = { fg = C.cyan.dark },
   -- ["@keyword.storage"] = {},
   ["@keyword.repeat"] = { fg = C.blue.base },
@@ -102,7 +102,7 @@ return {
   ["@markup.math"] = { link = "Special" },
   ["@markup.environment"] = { link = "Macro" },
 
-  -- ["@markup.link"] = { fg = C.cyan.base },
+  ["@markup.link"] = { fg = C.cyan.dark },
   ["@markup.link.label"] = { fg = C.fg.bright },
   ["@markup.link.url"] = { fg = C.green.base },
 
@@ -118,6 +118,6 @@ return {
   ["@diff.delta"] = { link = "DiffChange" },
 
   ["@tag"] = { link = "Tag" },
-  ["@tag.attribute"] = { fg = C.purple },
+  ["@tag.attribute"] = { fg = C.blue.bright },
   ["@tag.delimiter"] = { fg = C.fg.dark }
 }

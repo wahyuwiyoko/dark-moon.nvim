@@ -1,8 +1,8 @@
 return {
   bg = {
-    base = "#232634",
-    dark = "#11131a",
-    bright = "#34394f"
+    base = "#212431",
+    dark = "#14161f",
+    bright = "#2a2e41"
   },
   fg = {
     base = "#aab0cf",
@@ -23,18 +23,18 @@ return {
   },
   blue = {
     base = "#7d87bf",
-    bright = "#8e95ec"
+    bright = "#b8bbe0"
   },
   yellow = {
-    base = "#e3e3a1",
-    bright = "#efefc9"
+    base = "#c3c38d",
+    bright = "#dadaa4"
   },
   orange = {
-    base = "#f5c47f",
-    bright = "#fae2bf"
+    base = "#f7cf97",
+    bright = "#e9d0aa"
   },
   cyan = {
-    base = "#1fbfff",
+    base = "#b7e0f0",
     dark = "#81b6da"
   },
   purple = "#a286e4"

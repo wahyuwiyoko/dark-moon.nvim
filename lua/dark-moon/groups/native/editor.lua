@@ -24,7 +24,7 @@ return {
   diffChanged = { link = "DiffChange" },
   diffRemoved = { link = "DiffDelete" },
 
-  ColorColumn = { bg = C.bg.bright },
+  ColorColumn = { bg = C.bg.base },
   Conceal = { bg = "NONE" },
   Directory = { fg = C.blue.base, bold = O.styles.bold },
   EndOfBuffer = { fg = C.bg.dark, bg = C.bg.dark },
@@ -62,7 +62,7 @@ return {
   FloatTitle = { fg = C.fg.bright, bg = C.bg.dark, bold = O.styles.bold },
 
   Pmenu = { fg = C.fg.base, bg = C.bg.base },
-  PmenuSel = { fg = C.fg.bright, bg = U.darken(C.bg.bright, 0.9) },
+  PmenuSel = { fg = C.fg.bright, bg = U.darken(C.bg.bright, 0.8) },
   -- PmenuKind = {},
   -- PmenuKindSel = {},
   -- PmenuExtra = {},
