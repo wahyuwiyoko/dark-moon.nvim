@@ -29,7 +29,7 @@ M.get = function ()
     terminal_color_7 = C.fg.base, -- White
     terminal_color_15 = C.white, -- Bright white
 
-    terminal_color_foreground = C.fg.light,
+    terminal_color_foreground = C.fg.bright,
     terminal_color_background = C.bg.dark
   }
 end

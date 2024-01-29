@@ -1,5 +1,10 @@
 local M = {}
 
+local colors = {
+  dark = "#232634",
+  bright = "#dbdbdb"
+}
+
 local function hex_to_rgb(str)
   str = string.lower(str)
 
@@ -35,11 +40,11 @@ local function blend(foreground, background, alpha)
 end
 
 M.darken = function (hex, amount, bg)
-  return blend(
-    hex,
-    bg or require("dark-moon.colors").bg.dark,
-    math.abs(amount)
-  )
+  return blend(hex, bg or colors.dark, math.abs(amount))
+end
+
+M.lighten = function (hex, amount, fg)
+  return blend(hex, fg or colors.bright, math.abs(amount))
 end
 
 return M

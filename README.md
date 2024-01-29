@@ -123,9 +123,8 @@ require("dark-moon").setup({
       underline = true,
       undercurl = false
     },
-    String = { fg = color.green.high },
-    PmenuSel = { fg = color.bg.dark, bg = color.cyan.dark },
-    ["@variable.member"] = { fg = color.fg.light }
+    String = { fg = color.green.dim },
+    ["@variable.member"] = { fg = color.fg.bright }
   }
 })
 
@@ -151,8 +150,8 @@ local color = require("dark-moon.colors")
 
 print(vim.inspect(color.blue))
 -- {
---   base = "#959dcb",
---   light = "#b8bcf3"
+--   base = "#7d87bf",
+--   bright = "#8e95ec"
 -- }
 ```
 
@@ -187,3 +186,4 @@ a PR with a fix, reference the issue you created.
 - [Catppuccin](https://github.com/catppuccin) for [catppuccin/nvim](https://github.com/catppuccin/nvim)
 - [Rosé Pine](https://github.com/rose-pine) for [rose-pine/neovim](https://github.com/rose-pine/neovim)
 - [AlexvZyl](https://github.com/AlexvZyl) for [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim)
+- [Coolors](https://coolors.co/) for [color picker](https://coolors.co/color-picker)

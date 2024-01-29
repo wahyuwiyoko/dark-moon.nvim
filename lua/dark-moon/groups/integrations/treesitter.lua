@@ -9,24 +9,24 @@ M.get = function ()
     -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md
 
     -- Identifiers
-    ["@variable"] = { fg = C.fg.light, italic = O.styles.italic },
+    ["@variable"] = { fg = C.fg.bright, italic = O.styles.italic },
     ["@variable.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
-    ["@variable.parameter"] = { fg = C.purple, italic = O.styles.italic },
-    ["@variable.member"] = { fg = C.blue.light },
+    ["@variable.parameter"] = { link = "@variable" },
+    ["@variable.member"] = { fg = C.fg.bright },
 
     ["@constant"] = { fg = C.yellow.base },
     ["@constant.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
     ["@constant.macro"] = { fg = C.yellow.base },
 
-    ["@module"] = { fg = C.yellow.base },
+    ["@module"] = { fg = C.fg.bright },
     ["@module.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
     ["@label"] = { link = "Label" },
 
     -- Literals
     ["@string"] = { link = "String" },
     -- ["@string.documentation"] = {},
-    ["@string.regexp"] = { fg = C.cyan.dark },
-    ["@string.escape"] = { fg = C.cyan.dark },
+    ["@string.regexp"] = { fg = C.cyan.dim },
+    ["@string.escape"] = { fg = C.cyan.dim },
     ["string.special"] = { link = "String" },
     ["string.special.symbol"] = { link = "Identifier" },
     ["string.special.url"] = { fg = C.green.base },
@@ -41,12 +41,12 @@ M.get = function ()
 
     -- Types
     ["@type"] = { link = "Type" },
-    ["@type.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
+    ["@type.builtin"] = { fg = C.red.dim, bold = O.styles.bold },
     ["@type.definition"] = { fg = C.blue.base },
-    ["@type.qualifier"] = { fg = C.yellow.base },
+    ["@type.qualifier"] = { fg = C.orange.base },
 
     -- ["@attribute"] = {},
-    ["@property"] = { fg = C.blue.light, italic = O.styles.italic },
+    ["@property"] = { fg = C.blue.bright, italic = O.styles.italic },
 
     -- Functions
     ["@function"] = { link = "Function" },
@@ -63,13 +63,13 @@ M.get = function ()
     -- Keywords
     ["@keyword"] = { link = "Keyword" },
     -- ["@keyword.coroutine"] = {},
-    ["@keyword.function"] = { fg = C.blue.light },
-    ["@keyword.operator"] = { fg = C.cyan.base },
-    ["@keyword.import"] = { fg = C.cyan.dark },
+    ["@keyword.function"] = { fg = C.blue.bright },
+    ["@keyword.operator"] = { fg = C.red.dim },
+    ["@keyword.import"] = { fg = C.cyan.dim },
     -- ["@keyword.storage"] = {},
     ["@keyword.repeat"] = { fg = C.blue.base },
     ["@keyword.return"] = { fg = C.blue.base },
-    ["@keyword.debug"] = { fg = C.cyan.dark },
+    ["@keyword.debug"] = { fg = C.cyan.dim },
     ["@keyword.exception"] = { fg = C.blue.base },
 
     ["@keyword.conditional"] = { fg = C.blue.base },
@@ -79,8 +79,8 @@ M.get = function ()
     ["@keyword.directive.define"] = { fg = C.purple },
 
     -- Punctuation
-    ["@punctuation.delimiter"] = { fg = C.fg.light },
-    ["@punctuation.bracket"] = { fg = C.cyan.dark },
+    ["@punctuation.delimiter"] = { fg = C.fg.bright },
+    ["@punctuation.bracket"] = { fg = C.fg.dark },
     ["@punctuation.special"] = { fg = C.cyan.base },
 
     -- Comments
@@ -107,7 +107,7 @@ M.get = function ()
     ["@markup.environment"] = { link = "Macro" },
 
     -- ["@markup.link"] = { fg = C.cyan.base },
-    ["@markup.link.label"] = { fg = C.fg.light },
+    ["@markup.link.label"] = { fg = C.fg.bright },
     ["@markup.link.url"] = { fg = C.green.base },
 
     -- ["@markup.raw"] = {},
@@ -115,7 +115,7 @@ M.get = function ()
 
     ["@markup.list"] = { fg = C.cyan.base },
     ["@markup.list.checked"] = { fg = C.cyan.base, bg = C.cyan.base, blend = 10 },
-    ["@markup.list.unchecked"] = { fg = C.fg.light },
+    ["@markup.list.unchecked"] = { fg = C.fg.bright },
 
     ["@diff.plus"] = { link = "DiffAdd" },
     ["@diff.minus"] = { link = "DiffDelete" },

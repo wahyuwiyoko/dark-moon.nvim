@@ -1,48 +1,42 @@
 return {
   bg = {
-    base = "#292d3e",
-    dark = "#1b1e2b",
-    light = "#32374d",
-    lighter = "#444267"
+    base = "#232634",
+    dark = "#11131a",
+    bright = "#34394f"
   },
   fg = {
-    base = "#a6accd",
-    dark = "#676e96",
-    light = "#fbfbfb"
+    base = "#aab0cf",
+    dark = "#7e84a5",
+    bright = "#dbdbdb"
   },
   grey = {
-    base = "#8796b0",
-    dark = "#353b52"
+    base = "#9da9be",
+    dim = "#333c4d"
   },
   red = {
-    base = "#d06178",
-    heavy = "#e61f44"
+    base = "#e65e5e",
+    dim = "#ed8f8f"
   },
   green = {
-    base = "#b4c4b4",
-    high = "#bcd9c4",
-    heavy = "#acfab4"
+    base = "#89a389",
+    dim = "#a7baa7"
   },
   blue = {
-    base = "#959dcb",
-    light = "#b8bcf3"
+    base = "#7d87bf",
+    bright = "#8e95ec"
   },
   yellow = {
-    base = "#cfcfbf",
-    light = "#dfdf9f"
+    base = "#e3e3a1",
+    bright = "#efefc9"
   },
   orange = {
-    base = "#b4b4b4",
-    light = "#c2b0b0"
+    base = "#f5c47f",
+    bright = "#fae2bf"
   },
   cyan = {
-    base = "#89ddff",
-    dark = "#89bbdd"
+    base = "#1fbfff",
+    dim = "#81b6da"
   },
-  hollow = {
-    base = "#424760",
-    lighter = "#30354e"
-  },
-  purple = "#b9a3eb",
+  purple = "#a286e4",
   white = "#ffffff"
 }
