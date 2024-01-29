@@ -1,15 +1,5 @@
 # Dark Moon
 
-> [!IMPORTANT]
-> The color palette from blue-moon will be change soon as I still updating the
-> project and find a darker color. The color will be the same as blue-moon but
-> darker. Any feedback are welcome for the new color palette.
-
-> [!IMPORTANT]
-> I encourage people who use this color scheme and want to updating it to
-> latest changes, please check the README again soon for the instruction as it
-> may have a minor breaking changes because it's an early development.
-
 A Neovim color scheme derived from
 [blue-moon](https://github.com/kyazdani42/blue-moon).
 
@@ -150,7 +140,7 @@ local color = require("dark-moon.colors")
 print(vim.inspect(color.blue))
 -- {
 --   base = "#7d87bf",
---   bright = "#8e95ec"
+--   bright = "#b8bbe0"
 -- }
 ```
 
