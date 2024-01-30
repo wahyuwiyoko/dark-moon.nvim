@@ -86,7 +86,7 @@ return {
   SpellBad = { sp = C.red.base, undercurl = true },
 
   StatusLine = { fg = C.fg.bright, bg = U.darken(C.bg.dark, 0.5) },
-  -- StatusLineNC = {},
+  StatusLineNC = { fg = C.fg.dark, bg = C.bg.dark },
 
   TabLine = { fg = C.fg.bright, bg = C.bg.dark },
   TabLineFill = { fg = C.fg.bright, bg = C.bg.dark },
