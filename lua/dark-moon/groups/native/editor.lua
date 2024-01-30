@@ -35,7 +35,7 @@ return {
   Folded = { fg = C.fg.dark },
   FoldColumn = { fg = C.yellow.base },
 
-  Search = { fg = C.bg.dark, bg = C.orange.bright },
+  Search = { fg = C.fg.bright, bg = C.bg.bright },
   IncSearch = { fg = C.bg.dark, bg = C.orange.base },
 
   Substitute = { link = "IncSearch" },

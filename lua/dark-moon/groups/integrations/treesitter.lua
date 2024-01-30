@@ -10,19 +10,21 @@ return {
   ["@variable.parameter"] = { link = "@variable" },
   ["@variable.member"] = { fg = C.fg.bright },
 
-  ["@constant"] = { fg = C.yellow.base },
-  ["@constant.builtin"] = { fg = C.orange.bright, bold = O.styles.bold },
+  ["@constant"] = { fg = C.orange.base },
+  ["@constant.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
   ["@constant.macro"] = { fg = C.yellow.base },
 
   ["@module"] = { fg = C.fg.bright },
   ["@module.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
+
   ["@label"] = { link = "Label" },
+  ["@label.markdown"] = { fg = C.cyan.dark },
 
   -- Literals
   ["@string"] = { link = "String" },
   -- ["@string.documentation"] = {},
   ["@string.regexp"] = { fg = C.cyan.dark },
-  ["@string.escape"] = { fg = C.cyan.dark },
+  ["@string.escape"] = { fg = C.green.dark },
   ["@string.special"] = { link = "String" },
   ["@string.special.symbol"] = { link = "Identifier" },
   ["@string.special.url"] = { fg = C.green.base },
@@ -39,7 +41,7 @@ return {
   -- Types
   ["@type"] = { link = "Type" },
   ["@type.builtin"] = { fg = C.yellow.base, bold = O.styles.bold },
-  ["@type.definition"] = { fg = C.blue.base },
+  ["@type.definition"] = { link = "@type" },
   ["@type.qualifier"] = { fg = C.orange.bright },
 
   -- ["@attribute"] = {},
@@ -60,7 +62,7 @@ return {
   -- Keywords
   ["@keyword"] = { link = "Keyword" },
   -- ["@keyword.coroutine"] = {},
-  ["@keyword.function"] = { fg = C.blue.base },
+  ["@keyword.function"] = { link = "@keyword" },
   ["@keyword.operator"] = { fg = C.cyan.base },
   ["@keyword.import"] = { fg = C.cyan.dark },
   -- ["@keyword.storage"] = {},
@@ -73,7 +75,7 @@ return {
   -- ["@keyword.conditional.ternary"] = {},
 
   ["@keyword.directive"] = { fg = C.yellow.base },
-  ["@keyword.directive.define"] = { fg = C.purple },
+  ["@keyword.directive.define"] = { fg = C.purple.base },
 
   -- Punctuation
   ["@punctuation.delimiter"] = { fg = C.fg.bright },
@@ -86,7 +88,7 @@ return {
 
   ["@comment.todo"] = { fg = C.bg.dark, bg = C.cyan.base },
   ["@comment.hint"] = { fg = C.bg.dark, bg = C.green.base },
-  ["@comment.info"] = { fg = C.bg.dark, bg = C.purple },
+  ["@comment.info"] = { fg = C.bg.dark, bg = C.purple.base },
   ["@comment.note"] = { fg = C.bg.dark, bg = C.blue.base },
   ["@comment.warning"] = { fg = C.bg.dark, bg = C.orange.base },
   ["@comment.error"] = { fg = C.bg.dark, bg = C.red.base },
@@ -103,14 +105,15 @@ return {
   ["@markup.environment"] = { link = "Macro" },
 
   ["@markup.link"] = { fg = C.cyan.dark },
-  ["@markup.link.label"] = { fg = C.fg.bright },
+  ["@markup.link.label"] = { fg = C.purple.bright },
   ["@markup.link.url"] = { fg = C.green.base },
 
   -- ["@markup.raw"] = {},
-  -- ["@markup.raw.block"] = {},
+  ["@markup.raw.block"] = { fg = C.fg.dark },
+  ["@markup.raw.markdown_inline"] = { link = "@markup.raw.block" },
 
   ["@markup.list"] = { fg = C.cyan.base },
-  ["@markup.list.checked"] = { fg = C.cyan.base, bg = C.cyan.base, blend = 10 },
+  ["@markup.list.checked"] = { fg = C.cyan.base, bg = C.bg.base },
   ["@markup.list.unchecked"] = { fg = C.fg.bright },
 
   ["@diff.plus"] = { link = "DiffAdd" },

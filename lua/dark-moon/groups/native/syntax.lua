@@ -7,7 +7,7 @@ return {
   String = { fg = C.green.base },
   Character = { fg = C.green.base },
   Number = { fg = C.fg.base },
-  Boolean = { fg = C.orange.bright },
+  Boolean = { fg = C.orange.base },
   Float = { fg = C.orange.base },
 
   Identifier = { fg = C.orange.bright },
@@ -23,18 +23,18 @@ return {
 
   PreProc = { fg = C.yellow.base },
   Include = { fg = C.blue.bright },
-  Define = { fg = C.purple },
-  Macro = { fg = C.purple },
+  Define = { fg = C.purple.base },
+  Macro = { fg = C.purple.base },
   PreCondit = { link = "PreProc" },
 
-  Type = { fg = C.orange.bright },
+  Type = { fg = C.orange.base },
   StorageClass = { fg = C.yellow.base },
   Structure = { fg = C.yellow.base },
   Typedef = { link = "Type" },
 
   Special = { fg = C.blue.base },
   SpecialChar = { link = "Special" },
-  Tag = { fg = C.blue.base },
+  Tag = { fg = C.orange.base },
   -- Delimiter = {},
   -- Debug = {},
 

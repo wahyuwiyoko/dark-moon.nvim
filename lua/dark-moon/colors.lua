@@ -26,16 +26,19 @@ return {
     bright = "#b8bbe0"
   },
   yellow = {
-    base = "#c3c38d",
-    bright = "#dadaa4"
+    base = "#d2c57f",
+    bright = "#e9dd95"
   },
   orange = {
-    base = "#f7cf97",
-    bright = "#e9d0aa"
+    base = "#d3b488",
+    bright = "#ecc083"
   },
   cyan = {
-    base = "#b7e0f0",
-    dark = "#81b6da"
+    base = "#89bcc8",
+    dark = "#5ca2b2"
   },
-  purple = "#a286e4"
+  purple = {
+    base = "#a286e4",
+    bright = "#bba1f7"
+  }
 }

@@ -17,8 +17,8 @@ return {
   terminal_color_4 = C.blue.base, -- Blue
   terminal_color_12 = C.blue.bright, -- Bright blue
 
-  terminal_color_5 = C.purple, -- Magenta
-  terminal_color_13 = C.purple, -- Bright magenta
+  terminal_color_5 = C.purple.base, -- Purple
+  terminal_color_13 = C.purple.bright, -- Bright Purple
 
   terminal_color_6 = C.cyan.base, -- Cyan
   terminal_color_14 = C.cyan.base, -- Bright cyan

@@ -26,5 +26,5 @@ return {
   ["@lsp.type.struct"] = {},
   ["@lsp.type.type"] = { link = "Type" },
   ["@lsp.type.typeParameter"] = {},
-  ["@lsp.type.variable"] = { link = "@variable" }
+  ["@lsp.type.variable"] = {}
 }
