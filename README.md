@@ -8,9 +8,9 @@ terminals, and [other supported plugins](#supported-plugins).
 
 ## Screenshots
 
-![Lua code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/9a4f0634-f850-4be4-b0a8-034cc6fe8e12)
+![Lua code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/2baa2c79-ec36-45b2-8d3c-c928390031fd)
 
-![JavaScript and TypeScript code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/3e1ff35f-0a73-44e8-a840-13a3a1b761c2)
+![JavaScript and TypeScript code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/3e12d126-2207-4412-a876-e46022671007)
 
 ## Requirements
 
