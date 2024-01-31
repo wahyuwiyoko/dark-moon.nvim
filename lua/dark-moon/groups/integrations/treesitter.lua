@@ -5,17 +5,17 @@ local O = require("dark-moon.config").options
 -- Reference: https://github.com/nvim-treesitter/nvim-treesitter/blob/master/CONTRIBUTING.md#highlights
 return {
   -- Identifiers
-  ["@variable"] = { fg = C.fg.bright, italic = O.styles.italic },
-  ["@variable.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
+  ["@variable"] = { fg = C.fg.bright },
+  ["@variable.builtin"] = { fg = C.cyan.base, bold = O.styles.bold },
   ["@variable.parameter"] = { link = "@variable" },
   ["@variable.member"] = { fg = C.fg.bright },
 
-  ["@constant"] = { fg = C.orange.base },
-  ["@constant.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
-  ["@constant.macro"] = { fg = C.yellow.base },
+  ["@constant"] = { link = "Constant" },
+  ["@constant.builtin"] = { fg = C.cyan.base, bold = O.styles.bold },
+  ["@constant.macro"] = { fg = C.purple.base },
 
   ["@module"] = { fg = C.fg.bright },
-  ["@module.builtin"] = { fg = C.orange.base, bold = O.styles.bold },
+  ["@module.builtin"] = { fg = C.cyan.base, bold = O.styles.bold },
 
   ["@label"] = { link = "Label" },
   ["@label.markdown"] = { fg = C.cyan.dark },
@@ -31,7 +31,7 @@ return {
   -- ["@string.special.path"] = {},
 
   ["@character"] = { link = "Character" },
-  ["@character.special"] = { link = "Character" },
+  ["@character.special"] = { link = "SpecialChar" },
 
   ["@boolean"] = { link = "Boolean" },
 
@@ -40,9 +40,9 @@ return {
 
   -- Types
   ["@type"] = { link = "Type" },
-  ["@type.builtin"] = { fg = C.yellow.base, bold = O.styles.bold },
-  ["@type.definition"] = { link = "@type" },
-  ["@type.qualifier"] = { fg = C.orange.bright },
+  ["@type.builtin"] = { fg = C.cyan.base, bold = O.styles.bold },
+  ["@type.definition"] = { link = "Typedef" },
+  ["@type.qualifier"] = { fg = C.blue.base },
 
   -- ["@attribute"] = {},
   ["@property"] = { fg = C.blue.bright, italic = O.styles.italic },
@@ -61,24 +61,24 @@ return {
 
   -- Keywords
   ["@keyword"] = { link = "Keyword" },
-  -- ["@keyword.coroutine"] = {},
+  ["@keyword.coroutine"] = { link = "@keyword" },
   ["@keyword.function"] = { link = "@keyword" },
-  ["@keyword.operator"] = { fg = C.cyan.base },
-  ["@keyword.import"] = { fg = C.cyan.dark },
-  -- ["@keyword.storage"] = {},
-  ["@keyword.repeat"] = { fg = C.blue.base },
-  ["@keyword.return"] = { fg = C.blue.base },
-  ["@keyword.debug"] = { fg = C.cyan.dark },
-  ["@keyword.exception"] = { fg = C.blue.base },
+  ["@keyword.operator"] = { link = "@keyword" },
+  ["@keyword.import"] = { link = "@keyword" },
+  ["@keyword.storage"] = { link = "@keyword" },
+  ["@keyword.repeat"] = { link = "@keyword" },
+  ["@keyword.return"] = { link = "@keyword" },
+  ["@keyword.debug"] = { link = "@keyword" },
+  ["@keyword.exception"] = { link = "@keyword" },
 
-  ["@keyword.conditional"] = { fg = C.blue.base },
-  -- ["@keyword.conditional.ternary"] = {},
+  ["@keyword.conditional"] = { link = "@keyword" },
+  ["@keyword.conditional.ternary"] = { link = "@keyword" },
 
   ["@keyword.directive"] = { fg = C.yellow.base },
   ["@keyword.directive.define"] = { fg = C.purple.base },
 
   -- Punctuation
-  ["@punctuation.delimiter"] = { fg = C.fg.bright },
+  ["@punctuation.delimiter"] = { link = "Delimiter" },
   ["@punctuation.bracket"] = { fg = C.fg.dark },
   ["@punctuation.special"] = { fg = C.cyan.base },
 
@@ -108,8 +108,8 @@ return {
   ["@markup.link.label"] = { fg = C.purple.bright },
   ["@markup.link.url"] = { fg = C.green.base },
 
-  -- ["@markup.raw"] = {},
-  ["@markup.raw.block"] = { fg = C.fg.dark },
+  ["@markup.raw"] = { fg = C.fg.dark },
+  ["@markup.raw.block"] = { link = "@markup.raw" },
   ["@markup.raw.markdown_inline"] = { link = "@markup.raw.block" },
 
   ["@markup.list"] = { fg = C.cyan.base },
@@ -122,5 +122,5 @@ return {
 
   ["@tag"] = { link = "Tag" },
   ["@tag.attribute"] = { fg = C.blue.bright },
-  ["@tag.delimiter"] = { fg = C.fg.dark }
+  ["@tag.delimiter"] = { link = "Delimiter" }
 }

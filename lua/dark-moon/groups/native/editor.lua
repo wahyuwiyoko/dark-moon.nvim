@@ -56,19 +56,19 @@ return {
 
   Normal = { fg = C.fg.bright, bg = C.bg.dark },
   NormalNC = { link = "Normal" },
-  NormalFloat = { bg = U.darken(C.bg.dark, 0.5) },
+  NormalFloat = { fg = C.fg.bright, bg = U.darken(C.bg.dark, 0.5) },
 
-  FloatBorder = { fg = C.bg.bright },
-  FloatTitle = { fg = C.fg.bright, bg = C.bg.dark, bold = O.styles.bold },
+  FloatBorder = { fg = C.fg.dark, bg = U.darken(C.bg.dark, 0.5) },
+  FloatTitle = { fg = C.fg.bright, bold = O.styles.bold },
 
-  Pmenu = { fg = C.fg.base, bg = C.bg.base },
+  Pmenu = { fg = C.fg.base, bg = U.darken(C.bg.dark, 0.5) },
   PmenuSel = { fg = C.fg.bright, bg = U.darken(C.bg.bright, 0.8) },
   -- PmenuKind = {},
   -- PmenuKindSel = {},
   -- PmenuExtra = {},
   -- PmenuExtraSel = {},
-  PmenuSbar = { bg = C.bg.base },
-  PmenuThumb = { bg = C.fg.base },
+  PmenuSbar = { bg = U.darken(C.bg.dark, 0.5) },
+  PmenuThumb = { bg = U.lighten(C.bg.bright, 0.8) },
 
   ErrorMsg = { fg = C.red.base, bold = O.styles.bold },
   NvimInternalError = { link = "ErrorMsg" },
@@ -97,7 +97,7 @@ return {
 
   WinBar = { bold = O.styles.bold },
   WinBarNC = { link = "WinBar" },
-  WinSeparator = { fg = C.bg.base },
+  WinSeparator = { fg = C.bg.bright },
   VertSplit = { fg = C.bg.base, bg = C.bg.dark },
 
   healthSuccess = { fg = C.cyan.dark },

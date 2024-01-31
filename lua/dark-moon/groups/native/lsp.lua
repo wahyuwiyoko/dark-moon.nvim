@@ -2,9 +2,9 @@
 
 -- See `:help lsp-highlight`
 return {
-  -- LspReferenceText = {},
-  -- LspReferenceRead = {},
-  -- LspReferenceWrite = {},
+  LspReferenceText = { link = "Search" },
+  LspReferenceRead = { link = "Search" },
+  LspReferenceWrite = { link = "Search" },
   -- LspCodeLens = {},
   -- LspCodeLensSeparator = {},
   -- LspSignatureActiveParameter = {},
