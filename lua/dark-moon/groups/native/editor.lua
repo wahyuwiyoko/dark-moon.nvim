@@ -51,7 +51,7 @@ return {
   MoreMsg = { fg = C.blue.base },
   WarningMsg = { fg = C.red.base },
 
-  -- MsgArea = {},
+  MsgArea = { link = "Normal" },
   MsgSeparator = { link = "StatusLine" },
 
   Normal = { fg = C.fg.bright, bg = C.bg.dark },
@@ -80,9 +80,9 @@ return {
   NonText = { fg = C.fg.dark },
   Whitespace = { link = "NonText" },
 
-  SpellLocal = { sp = C.orange.base, undercurl = true },
+  SpellLocal = { sp = C.blue.base, undercurl = true },
   SpellCap = { sp = C.yellow.base, undercurl = true },
-  SpellRare = { sp = C.blue.base, undercurl = true },
+  SpellRare = { sp = C.orange.base, undercurl = true },
   SpellBad = { sp = C.red.base, undercurl = true },
 
   StatusLine = { fg = C.fg.bright, bg = U.darken(C.bg.dark, 0.5) },
@@ -100,8 +100,11 @@ return {
   WinSeparator = { fg = C.bg.bright },
   VertSplit = { fg = C.bg.base, bg = C.bg.dark },
 
-  healthSuccess = { fg = C.cyan.dark },
-  healthHelp = { fg = C.cyan.base },
+  helpHeader = { fg = C.cyan.base },
+  helpSectionDelim = { fg = C.fg.base },
+
+  healthSuccess = { fg = C.green.base },
+  healthHelp = { fg = C.blue.base },
   healthWarning = { fg = C.yellow.base },
   healthError = { fg = C.red.base }
 }
