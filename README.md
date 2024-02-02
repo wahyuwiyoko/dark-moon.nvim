@@ -6,6 +6,11 @@ A Neovim color scheme derived from
 Dark Moon color scheme support for Treesitter, built-in LSP client, true-color
 terminals, and [other supported plugins](#supported-plugins).
 
+This plugin is still under development and may breaking changes at any time.
+If you update this plugin to the latest changes and encounter some errors,
+please read the [CHANGELOG.md](CHANGELOG.md) for further instructions. I'm
+very sorry for this inconvenience.
+
 ## Screenshots
 
 ![Lua code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/2baa2c79-ec36-45b2-8d3c-c928390031fd)
