@@ -71,6 +71,8 @@ return {
   PmenuThumb = { bg = U.lighten(C.bg.bright, 0.8) },
 
   ErrorMsg = { fg = C.red.base, bold = O.styles.bold },
+
+  -- See `:help expr-highlight`
   NvimInternalError = { link = "ErrorMsg" },
 
   Title = { fg = C.cyan.base, bold = O.styles.bold },

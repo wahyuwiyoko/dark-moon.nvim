@@ -1,5 +1,5 @@
-local groups = require("dark-moon.groups")
 local config = require("dark-moon.config")
+local highlights = require("dark-moon.highlights")
 local set_hl_groups = require("dark-moon.utils.api").set_hl_groups
 
 local M = {}
@@ -23,10 +23,10 @@ end
 M.load = function (options)
   init()
   config.setup(options)
-  set_hl_groups(groups.get_groups())
+  set_hl_groups(highlights.get_hl_groups())
 
   if config.options.terminal_colors then
-    groups.set_term_colors()
+    highlights.set_term_colors()
   end
 end
 

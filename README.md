@@ -102,20 +102,20 @@ vim.cmd.colorscheme("dark-moon")
 An example of overriding the colors:
 
 ```lua
-local color = require("dark-moon.colors")
+local colors = require("dark-moon.colors")
 
 require("dark-moon").setup({
   overrides = {
     TelescopeTitle = {
       fg = "#ffffff",
       bg = "#000000",
-      sp = color.red.base,
+      sp = colors.red.base,
       bold = false,
       italic = true,
       underline = true,
       undercurl = false
     },
-    ["@variable.member"] = { fg = color.fg.bright }
+    ["@variable.member"] = { fg = colors.fg.bright }
   }
 })
 
@@ -131,15 +131,15 @@ For the list of color/palette, you can see in
 To get the colors/palette in Lua:
 
 ```lua
-local color = require("dark-moon.colors")
+local colors = require("dark-moon.colors")
 ```
 
 You can also inspect every color in Lua:
 
 ```lua
-local color = require("dark-moon.colors")
+local colors = require("dark-moon.colors")
 
-print(vim.inspect(color.blue))
+print(vim.inspect(colors.blue))
 -- {
 --   base = "#7d87bf",
 --   bright = "#b8bbe0"
@@ -175,7 +175,7 @@ Or just check all available colors with command:
     options = {
       themable = true
     },
-    highlights = require("dark-moon.groups.integrations.bufferline")
+    highlights = require("dark-moon.highlights.plugins.bufferline")
   })
   ```
 
