@@ -168,6 +168,17 @@ Or just check all available colors with command:
   })
   ```
 
+- [bufferline.nvim](https://github.com/akinsho/bufferline.nvim)
+
+  ```lua
+  require("bufferline").setup({
+    options = {
+      themable = true
+    },
+    highlights = require("dark-moon.groups.integrations.bufferline")
+  })
+  ```
+
 If you have a plugin that is not supported, feel free to create an issue or
 make a pull request!
 
