@@ -13,11 +13,16 @@ return {
   -- tab_close = { fg = "", bg = "" },
 
   -- close_button = { fg = "", bg = "" },
-  -- close_button_visible = { fg = "", bg = "" },
-  -- close_button_selected = { fg = "", bg = "" },
+  close_button_visible = { fg = C.fg.dark, bg = C.bg.dark },
+  close_button_selected = { fg = C.fg.bright, bg = C.bg.base },
 
   buffer_visible = { fg = C.fg.dark, bg = C.bg.dark },
-  buffer_selected = { fg = "", bg = "", bold = O.styles.bold, italic = O.styles.italic },
+  buffer_selected = {
+    fg = C.fg.bright,
+    bg = C.bg.base,
+    bold = O.styles.bold,
+    italic = O.styles.italic,
+  },
 
   -- numbers = { fg = "", bg = "" },
   -- numbers_visible = { fg = "", bg = "" },
@@ -75,5 +80,5 @@ return {
   -- pick_selected = { fg = "", bg = "", bold = O.styles.bold, italic = O.styles.italic },
 
   -- offset_separator = { fg = "", bg = "" },
-  -- trunc_marker = { fg = "", bg = "" }
+  -- trunc_marker = { fg = "", bg = "" },
 }

@@ -27,5 +27,5 @@ return {
   terminal_color_15 = C.fg.bright, -- Bright white
 
   terminal_color_foreground = C.fg.bright,
-  terminal_color_background = C.bg.dark
+  terminal_color_background = C.bg.dark,
 }

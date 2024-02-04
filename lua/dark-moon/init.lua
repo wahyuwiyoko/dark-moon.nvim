@@ -20,7 +20,7 @@ local function init()
   end
 end
 
-M.load = function (options)
+function M.load(options)
   init()
   config.setup(options)
   set_hl_groups(highlights.get_hl_groups())

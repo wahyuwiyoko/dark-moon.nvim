@@ -6,5 +6,5 @@ return {
   GitSignsChange = { fg = C.orange.bright },
   GitSignsDelete = { fg = C.red.base },
   GitSignsTopDelete = { fg = C.red.base },
-  GitSignsChangeDelete = { fg = C.yellow.bright }
+  GitSignsChangeDelete = { fg = C.yellow.bright },
 }

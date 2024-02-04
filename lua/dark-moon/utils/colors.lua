@@ -2,7 +2,7 @@ local M = {}
 
 local colors = {
   dark = "#212431",
-  bright = "#dbdbdb"
+  bright = "#dbdbdb",
 }
 
 local function hex_to_rgb(str)
@@ -25,7 +25,7 @@ local function blend(foreground, background, alpha)
   background = hex_to_rgb(background)
   foreground = hex_to_rgb(foreground)
 
-  local blend_channel = function (i)
+  local function blend_channel(i)
     local ret = (alpha * foreground[i] + ((1 - alpha) * background[i]))
 
     return math.floor(math.min(math.max(0, ret), 255) + 0.5)
@@ -39,11 +39,11 @@ local function blend(foreground, background, alpha)
   )
 end
 
-M.darken = function (hex, amount, bg)
+function M.darken(hex, amount, bg)
   return blend(hex, bg or colors.dark, math.abs(amount))
 end
 
-M.lighten = function (hex, amount, fg)
+function M.lighten(hex, amount, fg)
   return blend(hex, fg or colors.bright, math.abs(amount))
 end
 

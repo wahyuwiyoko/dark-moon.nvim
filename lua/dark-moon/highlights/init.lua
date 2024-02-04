@@ -3,25 +3,29 @@ local merge_table = require("dark-moon.utils.api").merge_table
 
 local M = {}
 
-local builtins = {"editor", "syntax", "lsp", "diagnostic"}
+local builtins = { "editor", "syntax", "lsp", "diagnostic" }
 
-local plugins = {"treesitter", "cmp", "gitsigns", "telescope"}
+local plugins = { "treesitter", "cmp", "gitsigns", "telescope" }
 
-M.get_hl_groups = function ()
+function M.get_hl_groups()
   local hl_groups = {}
 
   for _, builtin in ipairs(builtins) do
-    hl_groups = merge_table(hl_groups, require("dark-moon.highlights.builtins."..builtin))
+    hl_groups = merge_table(
+      hl_groups,
+      require("dark-moon.highlights.builtins." .. builtin)
+    )
   end
 
   for _, plugin in ipairs(plugins) do
-    hl_groups = merge_table(hl_groups, require("dark-moon.highlights.plugins."..plugin))
+    hl_groups =
+      merge_table(hl_groups, require("dark-moon.highlights.plugins." .. plugin))
   end
 
   return merge_table(hl_groups, config.options.overrides)
 end
 
-M.set_term_colors = function ()
+function M.set_term_colors()
   local colors = require("dark-moon.highlights.builtins.terminal")
 
   for term, color in pairs(colors) do

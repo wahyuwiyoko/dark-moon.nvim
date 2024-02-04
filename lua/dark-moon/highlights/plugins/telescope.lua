@@ -8,5 +8,5 @@ return {
   TelescopeMatching = { fg = C.orange.bright },
   TelescopePromptPrefix = { fg = C.fg.base },
   TelescopeSelection = { link = "PmenuSel" },
-  TelescopeSelectionCaret = { fg = C.fg.base }
+  TelescopeSelectionCaret = { fg = C.fg.base },
 }

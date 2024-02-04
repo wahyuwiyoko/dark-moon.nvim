@@ -14,7 +14,7 @@ return {
   Function = { fg = C.purple.bright },
 
   Statement = { fg = C.blue.bright, bold = O.styles.bold },
-  Conditional= { fg = C.blue.base },
+  Conditional = { fg = C.blue.base },
   Repeat = { fg = C.blue.base },
   Label = { fg = C.blue.base },
   Operator = { fg = C.fg.dark },
@@ -44,5 +44,5 @@ return {
   Underlined = { underline = true },
   Todo = { fg = C.blue.base },
   Error = { fg = C.red.base },
-  Ignore = { fg = C.fg.dark }
+  Ignore = { fg = C.fg.dark },
 }

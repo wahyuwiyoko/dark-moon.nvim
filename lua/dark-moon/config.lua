@@ -1,18 +1,19 @@
 local M = {}
 
-local defaults = {
+local default_options = {
   terminal_colors = true, -- Set terminal colors used in `:terminal`
   styles = {
     bold = true,
-    italic = false
+    italic = false,
   },
-  overrides = {} -- Override any style of highlight groups
+  overrides = {}, -- Override any style of highlight groups
 }
 
-M.options = defaults
+M.options = default_options
 
-M.setup = function (options)
-  M.options = vim.tbl_deep_extend("force", M.options or defaults, options or {})
+function M.setup(options)
+  M.options =
+    vim.tbl_deep_extend("force", M.options or default_options, options or {})
 end
 
 return M

@@ -122,5 +122,5 @@ return {
 
   ["@tag"] = { link = "Tag" },
   ["@tag.attribute"] = { fg = C.blue.bright },
-  ["@tag.delimiter"] = { link = "Delimiter" }
+  ["@tag.delimiter"] = { link = "Delimiter" },
 }

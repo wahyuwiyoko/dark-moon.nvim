@@ -35,5 +35,5 @@ return {
   CmpItemKindOperator = { link = "Operator" },
   CmpItemKindTypeParameter = { link = "Type" },
 
-  CmpItemMenu = { fg = C.fg.base }
+  CmpItemMenu = { fg = C.fg.base },
 }

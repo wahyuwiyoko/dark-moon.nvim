@@ -108,5 +108,5 @@ return {
   healthSuccess = { fg = C.green.base },
   healthHelp = { fg = C.blue.base },
   healthWarning = { fg = C.yellow.base },
-  healthError = { fg = C.red.base }
+  healthError = { fg = C.red.base },
 }
