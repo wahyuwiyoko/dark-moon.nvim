@@ -164,6 +164,7 @@ Or just check all available colors with command:
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
+- [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
   ```lua

@@ -5,7 +5,14 @@ local M = {}
 
 local builtins = { "editor", "syntax", "lsp", "diagnostic" }
 
-local plugins = { "treesitter", "cmp", "gitsigns", "telescope", "nvim_tree" }
+local plugins = {
+  "treesitter",
+  "cmp",
+  "gitsigns",
+  "telescope",
+  "nvim_tree",
+  "indent_blankline",
+}
 
 function M.get_hl_groups()
   local hl_groups = {}
