@@ -163,6 +163,7 @@ Or just check all available colors with command:
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp)
 - [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim)
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
+- [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
   ```lua
