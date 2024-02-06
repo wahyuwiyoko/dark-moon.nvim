@@ -185,6 +185,14 @@ Or just check all available colors with command:
   })
   ```
 
+- [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+
+  ```lua
+  require("toggleterm").setup({
+    highlights = require("dark-moon.highlights.plugins.toggleterm")
+  })
+  ```
+
 If you have a plugin that is not supported, feel free to create an issue or
 make a pull request!
 
