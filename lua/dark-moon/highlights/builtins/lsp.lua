@@ -7,7 +7,7 @@ return {
   LspReferenceWrite = { link = "Search" },
   -- LspCodeLens = {},
   -- LspCodeLensSeparator = {},
-  -- LspSignatureActiveParameter = {},
+  LspSignatureActiveParameter = { link = "Search" },
 
   -- See :help lsp-semantic-highlight
   ["@lsp.type.comment"] = {},

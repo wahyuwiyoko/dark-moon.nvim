@@ -4,7 +4,7 @@ local U = require("dark-moon.utils.colors")
 
 -- See `:help highlight-groups`
 return {
-  Cursor = { fg = C.bg.dark, bg = C.yellow.base },
+  Cursor = { fg = C.bg.dark, bg = C.grey.base },
   CursorColumn = { bg = C.bg.base },
   CurSearch = { fg = C.bg.dark, bg = C.orange.base },
   -- CursorIM = {},
