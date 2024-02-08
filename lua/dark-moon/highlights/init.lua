@@ -12,6 +12,7 @@ local plugins = {
   "telescope",
   "nvim_tree",
   "indent_blankline",
+  "which_key",
 }
 
 function M.get_hl_groups()

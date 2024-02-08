@@ -165,6 +165,7 @@ Or just check all available colors with command:
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim)
 - [nvim-tree.lua](https://github.com/nvim-tree/nvim-tree.lua)
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
   ```lua
