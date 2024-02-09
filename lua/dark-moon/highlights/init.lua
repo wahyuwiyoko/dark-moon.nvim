@@ -13,6 +13,7 @@ local plugins = {
   "nvim_tree",
   "indent_blankline",
   "which_key",
+  "nvim_notify",
 }
 
 function M.get_hl_groups()
