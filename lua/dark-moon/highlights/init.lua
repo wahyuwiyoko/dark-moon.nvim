@@ -14,6 +14,7 @@ local plugins = {
   "indent_blankline",
   "which_key",
   "nvim_notify",
+  "dashboard_nvim",
 }
 
 function M.get_hl_groups()

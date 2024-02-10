@@ -167,6 +167,7 @@ Or just check all available colors with command:
 - [indent-blankline.nvim](https://github.com/lukas-reineke/indent-blankline.nvim)
 - [which-key.nvim](https://github.com/folke/which-key.nvim)
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
+- [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
   ```lua
