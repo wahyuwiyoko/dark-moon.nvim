@@ -15,6 +15,7 @@ local plugins = {
   "which_key",
   "nvim_notify",
   "dashboard_nvim",
+  "oil",
 }
 
 function M.get_hl_groups()
