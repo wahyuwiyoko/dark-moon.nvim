@@ -11,8 +11,6 @@ If you update this plugin to the latest changes and encounter some errors,
 please read the [CHANGELOG.md](CHANGELOG.md) for further instructions. I'm
 very sorry for this inconvenience.
 
-## Screenshots
-
 ![Lua code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/2baa2c79-ec36-45b2-8d3c-c928390031fd)
 
 ![JavaScript and TypeScript code with Dark Moon](https://github.com/wahyuwiyoko/dark-moon.nvim/assets/137708513/3e12d126-2207-4412-a876-e46022671007)
@@ -68,7 +66,7 @@ use({
 
 ## Usage
 
-Using Vim:
+Using built-in `:colorscheme` command:
 
 ```vim
 colorscheme dark-moon
@@ -87,8 +85,7 @@ require("dark-moon").load()
 ## Configuration
 
 Setup options is optional, the Dark Moon will use the default values for setup
-options, unless `setup()` is called. You need to configure the options before
-set the color scheme. Below is the default configuration:
+options. Below is the default configuration:
 
 ```lua
 require("dark-moon").setup({
@@ -99,9 +96,6 @@ require("dark-moon").setup({
   },
   overrides = {} -- Override any style of highlight groups
 })
-
--- Setup must be called before load the color scheme
-vim.cmd.colorscheme("dark-moon")
 ```
 
 An example of overriding the colors:
@@ -199,6 +193,15 @@ Or just check all available colors with command:
   })
   ```
 
+I found some of these plugin doesn't need to be override or customize because
+by default their highlight groups have a good choice that match with the Dark
+Moon color scheme:
+
+- [lazy.nvim](https://github.com/folke/lazy.nvim)
+- [trouble.nvim](https://github.com/folke/trouble.nvim)
+- [lsp_signature.nvim](https://github.com/ray-x/lsp_signature.nvim)
+- [diffview.nvim](https://github.com/sindrets/diffview.nvim)
+
 If you have a plugin that is not supported, feel free to create an issue or
 make a pull request!
 
@@ -215,4 +218,5 @@ a PR with a fix, reference the issue you created.
 - [kyazdani42](https://github.com/kyazdani42) for [blue-moon](https://github.com/kyazdani42/blue-moon)
 - [AlexvZyl](https://github.com/AlexvZyl) for [nordic.nvim](https://github.com/AlexvZyl/nordic.nvim)
 - [rktjmp](https://github.com/rktjmp) for [lush-template](https://github.com/rktjmp/lush-template)
+- [alajmo](https://github.com/alajmo) for [pinto](https://pintovim.dev/)
 - [Coolors](https://coolors.co/) for [color picker](https://coolors.co/color-picker)
