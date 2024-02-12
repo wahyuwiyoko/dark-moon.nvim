@@ -18,7 +18,6 @@ return {
   ["@module.builtin"] = { fg = C.cyan.base, bold = O.styles.bold },
 
   ["@label"] = { link = "Label" },
-  ["@label.markdown"] = { fg = C.cyan.dark },
 
   -- Literals
   ["@string"] = { link = "String" },
@@ -110,7 +109,6 @@ return {
 
   ["@markup.raw"] = { fg = C.fg.dark },
   ["@markup.raw.block"] = { link = "@markup.raw" },
-  ["@markup.raw.markdown_inline"] = { link = "@markup.raw.block" },
 
   ["@markup.list"] = { fg = C.cyan.base },
   ["@markup.list.checked"] = { fg = C.cyan.base, bg = C.bg.base },

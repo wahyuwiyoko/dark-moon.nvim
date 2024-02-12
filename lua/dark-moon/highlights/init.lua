@@ -3,7 +3,12 @@ local merge_table = require("dark-moon.utils.api").merge_table
 
 local M = {}
 
-local builtins = { "editor", "syntax", "lsp", "diagnostic" }
+local builtins = {
+  "editor",
+  "syntax",
+  "lsp",
+  "diagnostic",
+}
 
 local plugins = {
   "treesitter",
@@ -19,6 +24,11 @@ local plugins = {
   "mason",
 }
 
+local semantics = {
+  "lua",
+  "markdown",
+}
+
 function M.get_hl_groups()
   local hl_groups = {}
 
@@ -32,6 +42,13 @@ function M.get_hl_groups()
   for _, plugin in ipairs(plugins) do
     hl_groups =
       merge_table(hl_groups, require("dark-moon.highlights.plugins." .. plugin))
+  end
+
+  for _, semantic in ipairs(semantics) do
+    hl_groups = merge_table(
+      hl_groups,
+      require("dark-moon.highlights.semantics." .. semantic)
+    )
   end
 
   return merge_table(hl_groups, config.options.overrides)
