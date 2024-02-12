@@ -16,6 +16,7 @@ local plugins = {
   "nvim_notify",
   "dashboard_nvim",
   "oil",
+  "mason",
 }
 
 function M.get_hl_groups()

@@ -169,6 +169,7 @@ Or just check all available colors with command:
 - [nvim-notify](https://github.com/rcarriga/nvim-notify)
 - [dashboard-nvim](https://github.com/nvimdev/dashboard-nvim)
 - [oil.nvim](https://github.com/stevearc/oil.nvim)
+- [mason.nvim](https://github.com/williamboman/mason.nvim)
 - [lualine.nvim](https://github.com/nvim-lualine/lualine.nvim)
 
   ```lua
