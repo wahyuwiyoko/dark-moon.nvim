@@ -7,8 +7,6 @@ return {
   Cursor = { fg = C.bg.dark, bg = C.grey.base },
   CursorColumn = { bg = C.bg.base },
   CurSearch = { fg = C.bg.dark, bg = C.orange.base },
-  -- CursorIM = {},
-  -- lCursor = {},
 
   CursorLine = { bg = C.bg.base },
   CursorLineNr = { fg = C.fg.base, bold = O.styles.bold },
