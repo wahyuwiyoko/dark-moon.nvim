@@ -98,7 +98,6 @@ return {
   WinBar = { bold = O.styles.bold },
   WinBarNC = { link = "WinBar" },
   WinSeparator = { fg = C.bg.bright },
-  VertSplit = { fg = C.bg.base, bg = C.bg.dark },
 
   helpHeader = { fg = C.cyan.base },
   helpSectionDelim = { fg = C.fg.base },
